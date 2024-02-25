@@ -1,0 +1,31 @@
+﻿@model IEnumerable<COMP2139_Assignment1_Nigar_Anar_Adler.Models.Hotel>
+
+<h2>Hotels</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Rating</th>
+            <th>Price Per Night</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hotel in Model)
+        {
+            <tr>
+                <td>@hotel.Name</td>
+                <td>@hotel.Location</td>
+                <td>@hotel.Rating</td>
+                <td>@hotel.PricePerNight.ToString("C")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@hotel.HotelID">Details</a> |
+                    <a asp-action="Search" asp-route-location="@hotel.Location">Search</a> |
+                    <a asp-action="BookHotel" asp-route-id="@hotel.HotelID">Book</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

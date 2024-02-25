@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h4 class="mb-0">Search for Deals</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-page="Results">
+                        <div class="mb-3">
+                            <label for="serviceType" class="form-label">I'm looking for</label>
+                            <select class="form-select" id="serviceType" name="ServiceType" required>
+                                <option value="">Choose...</option>
+                                <option value="Flight">Flights</option>
+                                <option value="Hotel">Hotels</option>
+                                <option value="Car">Car Rentals</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" name="City"
+                                placeholder="Where are you going?" required>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="startDate" class="form-label">Start Date</label>
+                                <input type="date" class="form-control" id="startDate" name="StartDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="endDate" class="form-label">End Date</label>
+                                <input type="date" class="form-control" id="endDate" name="EndDate" required>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+}

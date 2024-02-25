@@ -1,0 +1,17 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.Booking
+
+<h2>Booking Confirmation</h2>
+
+<div>
+    <h3>Thank you, @Model.CustomerName.</h3>
+    <p>Your booking has been confirmed.</p>
+    <p><strong>Booking ID:</strong> @Model.BookingID</p>
+    <p><strong>Flight:</strong> @Model.Flight?.Airline</p>
+    <p><strong>Departure:</strong> @Model.Flight?.DepartureTime.ToString("g")</p>
+    <p><strong>Price:</strong> @Model.TotalPrice.ToString("C")</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+</div>
+
+<!-- Add additional booking details and options as needed -->
+
+<a asp-action="Index">Back to Bookings</a>

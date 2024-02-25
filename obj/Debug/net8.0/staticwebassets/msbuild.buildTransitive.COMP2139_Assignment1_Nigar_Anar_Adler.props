@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/COMP2139_Assignment1_Nigar_Anar_Adler.props" />
+</Project>

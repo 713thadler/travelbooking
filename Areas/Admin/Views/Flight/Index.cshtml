@@ -1,0 +1,58 @@
+@model List<COMP2139_Assignment1_Nigar_Anar_Adler.Models.Flight>
+
+@{
+    ViewData["Title"] = "Flight Management";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>Airline</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+            <th>Flight Number</th>
+            <th>Seats</th>
+            <th>Available Seats</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var flight in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => flight.Airline)</td>
+                <td>@Html.DisplayFor(modelItem => flight.Origin)</td>
+                <td>@Html.DisplayFor(modelItem => flight.Destination)</td>
+                <td>@Html.DisplayFor(modelItem => flight.DepartureTime)</td>
+                <td>@Html.DisplayFor(modelItem => flight.ArrivalTime)</td>
+                <td>@Html.DisplayFor(modelItem => flight.Price)</td>
+                <td>@Html.DisplayFor(modelItem => flight.FlightNumber)</td>
+                <td>@flight.NumberOfSeats</td>
+                <td>@flight.AvailableSeats</td>
+                <td>@Html.DisplayFor(modelItem => flight.Description)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@flight.FlightID" class="btn btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@flight.FlightID" class="btn btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@flight.FlightID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info" role="alert">
+        <strong>No flights available.</strong>
+    </div>
+}
+
+<a asp-action="Create" class="btn btn-primary">Add New Flight</a>

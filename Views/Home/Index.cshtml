@@ -1,0 +1,76 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.ViewModels.SearchViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    var backgroundUrl = Url.Content("~/image/background1.jpg");
+}
+
+<style>
+    #mainContainer {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .bg-cover {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+</style>
+
+<div class="container-fluid px-1 px-sm-4 mx-auto bg-cover" style="background-image: url('@backgroundUrl');">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-10 col-lg-9 col-xl-8">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header">
+                    <h4 class="mb-1">Find the Best Deals</h4>
+                    <small class="text-muted">Explore flights, hotels, and cars all in one place</small>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Search" asp-action="Results" method="post">
+                        <div class="form-group">
+                            @Html.AntiForgeryToken()
+                        </div>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-3">
+                                <label class="form-label" for="serviceType">I'm looking for</label>
+                                <select asp-for="ServiceType" class="form-select" required>
+                                    <option value="">Choose an option</option>
+                                    <option value="Flights">Flights</option> <!-- Adjusted to match enum -->
+                                    <option value="Hotels">Hotels</option>
+                                    <option value="CarRentals">Car Rentals</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="departure">Departure</label>
+                                <input asp-for="Departure" class="form-control"
+                                    placeholder="Where are you leaving from?" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="destination">Destination</label>
+                                <input asp-for="Destination" class="form-control" placeholder="Where are you going?"
+                                    required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="startDate">Start Date</label>
+                                <input asp-for="StartDate" type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label" for="endDate">End Date</label>
+                                <input asp-for="EndDate" type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/site.js"></script>
+}

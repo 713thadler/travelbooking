@@ -1,0 +1,38 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.Flight
+
+@{
+    ViewData["Title"] = "Check Availability";
+}
+
+<h2>Check Availability</h2>
+
+<p>@ViewBag.AvailabilityMessage</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Airline</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Airline</td>
+            <td>@Model.Origin</td>
+            <td>@Model.Destination</td>
+            <td>@Model.DepartureTime.ToString("g")</td>
+            <td>@Model.ArrivalTime.ToString("g")</td>
+            <td>@Model.Price.ToString("C")</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- You can add a button to allow booking if the flight is available -->
+@if (ViewBag.AvailabilityMessage == "This flight is currently available for booking.")
+{
+    <a asp-action="BookFlight" asp-route-flightId="@Model.FlightID" class="btn btn-primary">Book This Flight</a>
+}

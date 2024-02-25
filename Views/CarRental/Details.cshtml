@@ -1,0 +1,29 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.CarRental
+
+<h2>Car Rental Details</h2>
+
+<div>
+    <h4>Rental ID: @Model.RentalID</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Company:</dt>
+        <dd class="col-sm-10">@Model.Company</dd>
+
+        <dt class="col-sm-2">Model:</dt>
+        <dd class="col-sm-10">@Model.Model</dd>
+
+        <dt class="col-sm-2">Price Per Day:</dt>
+        <dd class="col-sm-10">@Model.PricePerDay</dd>
+
+        <dt class="col-sm-2">Location:</dt>
+        <dd class="col-sm-10">@Model.Location</dd>
+
+        <dt class="col-sm-2">Availability:</dt>
+        <dd class="col-sm-10">@Model.Availability</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RentalID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

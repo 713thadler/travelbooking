@@ -1,0 +1,32 @@
+﻿@model IEnumerable<COMP2139_Assignment1_Nigar_Anar_Adler.Models.CarRental>
+
+<h2>All Car Rentals</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Model</th>
+            <th>Price Per Day</th>
+            <th>Location</th>
+            <th>Availability</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var carRental in Model)
+        {
+            <tr>
+                <td>@carRental.Company</td>
+                <td>@carRental.Model</td>
+                <td>@carRental.PricePerDay.ToString("C")</td>
+                <td>@carRental.Location</td>
+                <td>@(carRental.Availability ? "Yes" : "No")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@carRental.RentalID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@carRental.RentalID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

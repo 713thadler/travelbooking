@@ -1,0 +1,33 @@
+﻿@model IEnumerable<COMP2139_Assignment1_Nigar_Anar_Adler.Models.FlightViewModel>
+
+<h2>Select a Flight</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Airline</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+            <th></th> <!-- For the booking button -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var flight in Model)
+        {
+            <tr>
+                <td>@flight.Airline</td>
+                <td>@flight.Origin</td>
+                <td>@flight.Destination</td>
+                <td>@flight.DepartureTime.ToString("g")</td>
+                <td>@flight.ArrivalTime.ToString("g")</td>
+                <td>@flight.Price.ToString("C")</td>
+                <td>
+                    <a asp-action="BookFlight" asp-controller="Booking" asp-route-flightId="@flight.FlightID" class="btn btn-primary">Book This Flight</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

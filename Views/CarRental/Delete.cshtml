@@ -1,0 +1,27 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.CarRental
+
+<h2>Delete Car Rental</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Car Rental</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Company</dt>
+        <dd>@Model.Company</dd>
+        <dt>Model</dt>
+        <dd>@Model.Model</dd>
+        <dt>Price Per Day</dt>
+        <dd>@Model.PricePerDay.ToString("C")</dd>
+        <dt>Location</dt>
+        <dd>@Model.Location</dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+    }
+</div>

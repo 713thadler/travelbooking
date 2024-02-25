@@ -1,0 +1,18 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.Booking
+
+<h2>Book a Flight</h2>
+
+@using (Html.BeginForm("ConfirmBooking", "Booking", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <!-- Include form fields for booking details -->
+    @Html.EditorFor(model => model.CustomerName)
+    @Html.EditorFor(model => model.CustomerEmail)
+    @Html.EditorFor(model => model.PassengerName)
+    @Html.EditorFor(model => model.PassengerEmail)
+    <!-- Include hidden fields for FlightID -->
+    @Html.HiddenFor(model => model.FlightID)
+
+    <input type="submit" value="Confirm Booking" class="btn btn-success" />
+}

@@ -1,0 +1,45 @@
+﻿@model COMP2139_Assignment1_Nigar_Anar_Adler.Models.Flight
+
+@{
+    ViewData["Title"] = "Get Flight Details";
+}
+
+<h2>Get Flight Details</h2>
+
+@if (Model != null)
+{
+    <!-- Display the details of the flight in a table format -->
+    <table class="table">
+        <tr>
+            <th>Airline</th>
+            <td>@Model.Airline</td>
+        </tr>
+        <tr>
+            <th>Origin</th>
+            <td>@Model.Origin</td>
+        </tr>
+        <tr>
+            <th>Destination</th>
+            <td>@Model.Destination</td>
+        </tr>
+        <tr>
+            <th>Departure Time</th>
+            <td>@Model.DepartureTime.ToString("g")</td>
+        </tr>
+        <tr>
+            <th>Arrival Time</th>
+            <td>@Model.ArrivalTime.ToString("g")</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>@Model.Price.ToString("C")</td>
+        </tr>
+    </table>
+
+    <!-- Display availability message -->
+    <p>@ViewBag.AvailabilityMessage</p>
+}
+else
+{
+    <p>Flight details not available.</p>
+}

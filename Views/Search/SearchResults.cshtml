@@ -1,0 +1,50 @@
+@model COMP2139_Assignment1_Nigar_Anar_Adler.ViewModels.SearchResultsViewModel
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+@if (Model.Flights.Any() || Model.Hotels.Any() || Model.CarRentals.Any())
+{
+    @if (Model.Flights.Any())
+    {
+        <h3>Flights</h3>
+        @foreach (var flight in Model.Flights)
+        {
+            <div>
+    <p>@flight.Description</p>
+    <a asp-controller="Booking" asp-action="BookFlight" asp-route-flightId="@flight.FlightID">Book Flight</a>
+</div>
+        }
+    }
+
+    @if (Model.Hotels.Any())
+    {
+        <h3>Hotels</h3>
+        @foreach (var hotel in Model.Hotels)
+        {
+            <div>
+    <p>@hotel.Description</p>
+    <a asp-controller="Hotel" asp-action="BookHotel" asp-route-id="@hotel.HotelID">Book Hotel</a>
+</div>
+        }
+    }
+
+    @if (Model.CarRentals.Any())
+    {
+        <h3>Car Rentals</h3>
+        @foreach (var carRental in Model.CarRentals)
+        {
+            <div>
+    <p>@carRental.Description</p>
+    <a asp-controller="CarRental" asp-action="BookCarRental" asp-route-id="@carRental.RentalID">Book Car Rental</a>
+</div>
+        }
+    }
+}
+else
+{
+    <p>No results found.</p>
+}
