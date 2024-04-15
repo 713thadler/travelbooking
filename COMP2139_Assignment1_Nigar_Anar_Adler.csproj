@@ -1,34 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <!-- Target framework for the application -->
     <TargetFramework>net8.0</TargetFramework>
-    <!-- Enables nullable reference types -->
+    <!-- Enable nullable reference types to improve code safety -->
     <Nullable>enable</Nullable>
-    <!-- Enables implicit global usings for the project -->
+    <!-- Enable implicit global usings to reduce the need to specify commonly used namespaces -->
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- ASP.NET Core components for Entity Framework Core -->
+
+    <!-- ASP.NET Core Identity and Entity Framework Core libraries -->
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.2" />
-    <!-- Core Entity Framework package -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
-    <!-- Entity Framework Core provider for SQLite -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.2" />
-    <!-- Entity Framework Core provider for SQL Server -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
-    <!-- Entity Framework Core tools for the NuGet Package Manager Console in Visual Studio -->
+
+    <!-- Database providers for Entity Framework Core -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+    <!-- Uncomment the below line to include support for SQL Server -->
+    <!-- PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" /-->
+
+    <!-- Tools and design-time utilities for Entity Framework Core -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <!-- Design-time tools for scaffolding ASP.NET Core projects -->
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
-  </ItemGroup>
 
-  <ItemGroup>
-    <!-- Specific folders within the project, such as Data directories -->
-    <Folder Include="Areas\TravelProjectManagement\Data\" />
+    <!-- Design-time tools for ASP.NET Core scaffolding -->
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+
   </ItemGroup>
 
 </Project>

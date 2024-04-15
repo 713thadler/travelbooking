@@ -40,7 +40,30 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Flight" asp-action="Index">Flights</a>
+                            
                         </li>
+                        <div class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li class="nav-item">
+                <form method="post" asp-action="Logout" asp-controller="Account" asp-area="Identity">
+                    <button type="submit" class="nav-link btn btn-link">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+        }
+    </ul>
+</div>
+
                     </ul>
                 </div>
             </div>

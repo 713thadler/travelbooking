@@ -26,60 +26,48 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/CarRental/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FyUmVudGFsL0NyZWF0ZS5jc2h0bWw=
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/CarRental/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FyUmVudGFsL0RlbGV0ZS5jc2h0bWw=
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/CarRental/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FyUmVudGFsL0VkaXQuY3NodG1s
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/CarRental/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FyUmVudGFsL0luZGV4LmNzaHRtbA==
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Dashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Flight/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRmxpZ2h0L0NyZWF0ZS5jc2h0bWw=
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Flight/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRmxpZ2h0L0RlbGV0ZS5jc2h0bWw=
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Flight/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRmxpZ2h0L0VkaXQuY3NodG1s
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Flight/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRmxpZ2h0L0luZGV4LmNzaHRtbA==
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Hotel/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG90ZWwvQ3JlYXRlLmNzaHRtbA==
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Hotel/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG90ZWwvRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Hotel/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG90ZWwvRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Hotel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG90ZWwvSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/BookFlight.cshtml]
@@ -204,6 +192,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_StatusMessage.cshtml]
