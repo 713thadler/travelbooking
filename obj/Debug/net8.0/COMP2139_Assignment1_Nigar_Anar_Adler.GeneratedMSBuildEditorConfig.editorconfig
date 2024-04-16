@@ -1,19 +1,11 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = COMP2139_Assignment1_Nigar_Anar_Adler
 build_property.RootNamespace = COMP2139_Assignment1_Nigar_Anar_Adler
@@ -25,6 +17,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Dashboard/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s

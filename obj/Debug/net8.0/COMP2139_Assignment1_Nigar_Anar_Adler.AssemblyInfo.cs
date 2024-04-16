@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("COMP2139_Assignment1_Nigar_Anar_Adler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9065d81e3e930e9fac54acdf3fa51a37528d2f82")]
 [assembly: System.Reflection.AssemblyProductAttribute("COMP2139_Assignment1_Nigar_Anar_Adler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("COMP2139_Assignment1_Nigar_Anar_Adler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

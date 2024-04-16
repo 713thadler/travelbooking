@@ -45,19 +45,19 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler.Migrations.TravelBookingUser
                     b.HasData(
                         new
                         {
-                            Id = "9bfb8d8c-3516-4e65-8674-a8b053c4f24f",
+                            Id = "6898c48c-8bb3-47d0-9370-03d5a831870d",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "24c57f06-bd03-4f2a-8cf6-51a2128414ec",
+                            Id = "939a1ee5-132d-485c-b60a-20f07b37428e",
                             Name = "Staff",
                             NormalizedName = "STAFF"
                         },
                         new
                         {
-                            Id = "27d9b250-8d23-425a-8da4-e57ed27379c0",
+                            Id = "bb5d1943-a43b-4faa-a0b9-5714a0e0462b",
                             Name = "User",
                             NormalizedName = "USER"
                         });

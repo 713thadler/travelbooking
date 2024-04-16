@@ -7,34 +7,36 @@ using Microsoft.Extensions.Logging;
 
 namespace COMP2139_Assignment1_Nigar_Anar_Adler.Areas.Identity.Pages.Account
 {
-    [Authorize] // Ensures only authenticated users can access this method
-    public class LogoutModel(SignInManager<IdentityUser> signInManager, ILogger<LogoutModel> logger) : PageModel
+    [Authorize] // Ensures only authenticated users can access this page
+    public class LogoutModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager = signInManager;
-        private readonly ILogger<LogoutModel> _logger = logger;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly ILogger<LogoutModel> _logger;
+
+        public LogoutModel(SignInManager<IdentityUser> signInManager, ILogger<LogoutModel> logger)
+        {
+            _signInManager = signInManager;
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+            // Intentionally left blank: the method exists to render the logout confirmation page.
+        }
 
         public async Task<IActionResult> OnPostAsync()
-        {
-            await _signInManager.SignOutAsync();
+        {   
+            // kill the session
+            
+                 
+
+            await _signInManager.SignOutAsync();  // This line signs the user out.
             _logger.LogInformation("User logged out.");
-            return RedirectToPage("/Index");  // Redirecting to home page after logout
+            return RedirectToPage("Login");  // Redirects the user to the login page after logout.
         }
 
-        // write the logic for Model.ShowLogoutPrompt
-        public bool ShowLogoutPrompt { get; set; }
-        // model.ReturnUrl to go back to the page where the user was before logging out
-        public string ReturnUrl { get; set; }
-
-        public void OnGet(string? returnUrl = null)
-        {
-            ShowLogoutPrompt = false;
-            if (returnUrl != null)
-            {
-                ShowLogoutPrompt = true;
-                ReturnUrl = returnUrl;
-            }
-        }
 
     }
 }
+
 

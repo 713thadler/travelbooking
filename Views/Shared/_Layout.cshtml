@@ -14,56 +14,35 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">Travel Agency</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Booking" asp-action="Index">Bookings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Hotel" asp-action="Index">Hotels</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="CarRental" asp-action="Index">Car Rentals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Flight" asp-action="Index">Flights</a>
-                            
-                        </li>
-                        <div class="navbar-collapse collapse">
-    <ul class="navbar-nav">
-        @if (User.Identity.IsAuthenticated)
-        {
-            <li class="nav-item">
-                <form method="post" asp-action="Logout" asp-controller="Account" asp-area="Identity">
-                    <button type="submit" class="nav-link btn btn-link">Logout</button>
-                </form>
-            </li>
-        }
-        else
-        {
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
-            </li>
-        }
-    </ul>
-</div>
-
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Booking" asp-action="Index">Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Hotel" asp-action="Index">Hotels</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="CarRental" asp-action="Index">Car Rentals</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Flight" asp-action="Index">Flights</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <form method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Content("~/")" asp-antiforgery="true">
+                                    <button type="submit" class="btn btn-warning" onclick="return confirm('Are you sure you want to log out?');">
+                                        Logout
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                        }
                     </ul>
                 </div>
             </div>

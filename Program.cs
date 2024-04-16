@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -6,8 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using COMP2139_Assignment1_Nigar_Anar_Adler.Data;
 using COMP2139_Assignment1_Nigar_Anar_Adler.Services;
-using Microsoft.AspNetCore.Builder;
-using COMP2139_Assignment1_Nigar_Anar_Adler.Areas.Identity.Pages.Account;
 using COMP2139_Assignment1_Nigar_Anar_Adler.Controllers;
 
 namespace COMP2139_Assignment1_Nigar_Anar_Adler
@@ -19,12 +18,21 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
             CreateHostBuilder(args).Build().Run();
         }
 
+
+
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    _ = webBuilder.UseStartup<Startup>();
-                });
+     Host.CreateDefaultBuilder(args)
+         .ConfigureWebHostDefaults(webBuilder =>
+         {
+             webBuilder.UseStartup<Startup>();
+             webBuilder.ConfigureKestrel(serverOptions =>
+             {
+                 // Configure the server to listen on the port provided by the environment variable
+                 serverOptions.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080"));
+             });
+         });
+
 
         public class Startup
         {
@@ -37,53 +45,31 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
 
             public void ConfigureServices(IServiceCollection services)
             {
-                // Configure the SQLite connection string for travel-related data
-                var travelConnectionString = Configuration.GetConnectionString("SQLiteConnection");
-                if (string.IsNullOrEmpty(travelConnectionString))
+                services.AddRazorPages();
+
+                var connectionString = Configuration.GetConnectionString("SQLiteConnection");
+                if (string.IsNullOrEmpty(connectionString))
                 {
-                    throw new InvalidOperationException("The SQLite travel booking connection string is missing in the app settings.");
+                    throw new InvalidOperationException("Missing SQLite connection string.");
                 }
 
-                // Configure the SQLite connection string for user data
-                var userConnectionString = Configuration.GetConnectionString("SQLiteConnection");
-                if (string.IsNullOrEmpty(userConnectionString))
-                {
-                    throw new InvalidOperationException("The SQLite user context connection string is missing in the app settings.");
-                }
+                services.AddDbContext<TravelBookingContext>(options =>
+                    options.UseSqlite(connectionString));
+                services.AddDbContext<TravelBookingUserContext>(options =>
+                    options.UseSqlite(connectionString));
 
-                // Register DbContexts
-                _ = services.AddDbContext<TravelBookingContext>(options =>
-                    options.UseSqlite(travelConnectionString));
-
-                _ = services.AddDbContext<TravelBookingUserContext>(options =>
-                    options.UseSqlite(userConnectionString));
-
-                // Identity configuration
-                _ = services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddRoles<IdentityRole>()
                         .AddEntityFrameworkStores<TravelBookingUserContext>();
 
-                // Email service configuration
-                _ = services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
-                _ = services.AddTransient<IEmailSender, EmailSender>();
-                _ = services.AddTransient<RoleSeedService>();
-                _ = services.AddTransient<HomeController>();
-                _ = services.AddTransient<LogoutModel>();
-
-
-
-
-                // MVC and Razor Pages
-                _ = services.AddControllersWithViews();
-                _ = services.AddRazorPages();
-
-
-
-                // Authorization policies
-                _ = services.AddAuthorization(options =>
+                services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+                services.AddTransient<IEmailSender, EmailSender>();
+                services.AddTransient<RoleSeedService>();
+                services.AddTransient<HomeController>();
+                services.AddControllersWithViews();
+                services.AddAuthorization(options =>
                 {
-                    options.AddPolicy("RequireAuthenticatedUser", policy =>
-                        policy.RequireAuthenticatedUser());
+                    options.AddPolicy("RequireAuthenticatedUser", policy => policy.RequireAuthenticatedUser());
                 });
             }
 
@@ -91,48 +77,42 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
             {
                 if (env.IsDevelopment())
                 {
-                    _ = app.UseDeveloperExceptionPage();
+                    app.UseDeveloperExceptionPage();
                 }
                 else
                 {
-                    _ = app.UseExceptionHandler("/Home/Error");
+                    app.UseExceptionHandler("/Home/Error");
+                    app.UseHsts();
                 }
 
-                _ = app.UseStaticFiles();
-                _ = app.UseRouting();
-                _ = app.UseAuthentication();
-                _ = app.UseAuthorization();
+                app.UseHttpsRedirection();
+                app.UseStaticFiles();
+                app.UseRouting();
+                app.UseAuthentication();
+                app.UseAuthorization();
 
-                _ = app.UseEndpoints(endpoints =>
+                app.UseEndpoints(endpoints =>
                 {
-                    _ = endpoints.MapAreaControllerRoute(
-                        name: "admin_area",
-                        areaName: "Admin",
-                        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
-
-                    _ = endpoints.MapControllerRoute(
+                    endpoints.MapRazorPages();
+                    endpoints.MapControllerRoute(
                         name: "default",
                         pattern: "{controller=Home}/{action=Index}/{id?}");
-
-                    _ = endpoints.MapRazorPages();
-
-                    // Define the route for the Logout page
-                    _ = endpoints.MapPost("/Account/Logout", async context =>
-                    {
-                        var logoutModel = context.RequestServices.GetService<LogoutModel>();
-                        _ = await logoutModel.OnPostAsync();
-
-
-                    });
-                    app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{area:exists}/{controller=Identity}/{action?}/{id?}");
-    endpoints.MapRazorPages();
-});
-
+                    endpoints.MapAreaControllerRoute(
+                        name: "identity",
+                        areaName: "Identity",
+                        pattern: "Identity/{controller=Account}/{action=Index}/{id?}");
+                    endpoints.MapAreaControllerRoute(
+                        name: "admin",
+                        areaName: "Admin",
+                        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
                 });
+
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+                    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                    IdentityDataInitializer.SeedData(userManager, roleManager).GetAwaiter().GetResult();
+                }
             }
         }
     }
