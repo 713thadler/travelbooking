@@ -9,207 +9,207 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = COMP2139_Assignment1_Nigar_Anar_Adler
 build_property.RootNamespace = COMP2139_Assignment1_Nigar_Anar_Adler
-build_property.ProjectDir = /Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/
+build_property.ProjectDir = /Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler
+build_property.MSBuildProjectDirectory = /Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Admin/Views/Dashboard/index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Admin/Views/Dashboard/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Login.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Logout.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/Register.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ViewImports.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/BookFlight.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Booking/BookFlight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9Cb29rRmxpZ2h0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/BookingConfirmation.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Booking/BookingConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9Cb29raW5nQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/BookingForm.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Booking/BookingForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9Cb29raW5nRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Booking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Booking/ViewBooking.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Booking/ViewBooking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9va2luZy9WaWV3Qm9va2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/CarRental/Create.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/CarRental/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyUmVudGFsL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/CarRental/Delete.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/CarRental/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyUmVudGFsL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/CarRental/Details.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/CarRental/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyUmVudGFsL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/CarRental/Edit.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/CarRental/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyUmVudGFsL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/CarRental/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/CarRental/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyUmVudGFsL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/CheckAvailability.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/CheckAvailability.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0NoZWNrQXZhaWxhYmlsaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/Delete.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/Details.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/Edit.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/GetFlightDetails.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/GetFlightDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0dldEZsaWdodERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/ListFlights.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/ListFlights.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0xpc3RGbGlnaHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/ManageFlights.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/ManageFlights.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L01hbmFnZUZsaWdodHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Flight/SearchFlights.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Flight/SearchFlights.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L1NlYXJjaEZsaWdodHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Home/About.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Home/Contact.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Home/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Hotel/BookHotel.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Hotel/BookHotel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG90ZWwvQm9va0hvdGVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Hotel/BookingConfirmation.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Hotel/BookingConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG90ZWwvQm9va2luZ0NvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Hotel/Details.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Hotel/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG90ZWwvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Hotel/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Hotel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG90ZWwvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Hotel/Search.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Hotel/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG90ZWwvU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Search/Index.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Search/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VhcmNoL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Search/SearchResults.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Search/SearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VhcmNoL1NlYXJjaFJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/Error.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_Layout.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_LoginPartial.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_StatusMessage.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Shared/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGF0dXNNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/_ValidationScriptsPartial.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/_ViewImports.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/Views/_ViewStart.cshtml]
+[/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

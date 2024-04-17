@@ -18,20 +18,13 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
             CreateHostBuilder(args).Build().Run();
         }
 
-
-
-
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-     Host.CreateDefaultBuilder(args)
-         .ConfigureWebHostDefaults(webBuilder =>
-         {
-             webBuilder.UseStartup<Startup>();
-             webBuilder.ConfigureKestrel(serverOptions =>
-             {
-                 // Configure the server to listen on the port provided by the environment variable
-                 serverOptions.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080"));
-             });
-         });
+          Host.CreateDefaultBuilder(args)
+              .ConfigureWebHostDefaults(webBuilder =>
+              {
+                  webBuilder.UseStartup<Startup>();
+                  // No need to call ConfigureKestrel explicitly
+              });
 
 
         public class Startup
@@ -47,26 +40,30 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
             {
                 services.AddRazorPages();
 
-                var connectionString = Configuration.GetConnectionString("SQLiteConnection");
-                if (string.IsNullOrEmpty(connectionString))
-                {
-                    throw new InvalidOperationException("Missing SQLite connection string.");
-                }
+                // Ensure the connection string is provided
+                var connectionString = Configuration.GetConnectionString("SQLiteConnection")
+                    ?? throw new InvalidOperationException("Missing SQLite connection string.");
 
                 services.AddDbContext<TravelBookingContext>(options =>
                     options.UseSqlite(connectionString));
                 services.AddDbContext<TravelBookingUserContext>(options =>
                     options.UseSqlite(connectionString));
 
+                // Configuring Identity
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                         .AddRoles<IdentityRole>()
                         .AddEntityFrameworkStores<TravelBookingUserContext>();
 
+                // Email and role services
                 services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
                 services.AddTransient<IEmailSender, EmailSender>();
                 services.AddTransient<RoleSeedService>();
                 services.AddTransient<HomeController>();
+
+                // MVC Controllers
                 services.AddControllersWithViews();
+
+                // Simple Authorization policy
                 services.AddAuthorization(options =>
                 {
                     options.AddPolicy("RequireAuthenticatedUser", policy => policy.RequireAuthenticatedUser());
@@ -87,7 +84,9 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
 
                 app.UseHttpsRedirection();
                 app.UseStaticFiles();
+
                 app.UseRouting();
+
                 app.UseAuthentication();
                 app.UseAuthorization();
 
@@ -107,6 +106,7 @@ namespace COMP2139_Assignment1_Nigar_Anar_Adler
                         pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
                 });
 
+                // Seeding database with initial data
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();

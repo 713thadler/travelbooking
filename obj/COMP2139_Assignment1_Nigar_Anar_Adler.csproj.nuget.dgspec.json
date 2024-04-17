@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/COMP2139_Assignment1_Nigar_Anar_Adler.csproj": {}
+    "/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/COMP2139_Assignment1_Nigar_Anar_Adler.csproj": {}
   },
   "projects": {
-    "/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/COMP2139_Assignment1_Nigar_Anar_Adler.csproj": {
+    "/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/COMP2139_Assignment1_Nigar_Anar_Adler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/COMP2139_Assignment1_Nigar_Anar_Adler.csproj",
+        "projectUniqueName": "/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/COMP2139_Assignment1_Nigar_Anar_Adler.csproj",
         "projectName": "COMP2139_Assignment1_Nigar_Anar_Adler",
-        "projectPath": "/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/COMP2139_Assignment1_Nigar_Anar_Adler.csproj",
+        "projectPath": "/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/COMP2139_Assignment1_Nigar_Anar_Adler.csproj",
         "packagesPath": "/Users/adlerarian/.nuget/packages/",
-        "outputPath": "/Users/adlerarian/Documents/ASP.NET/Assignment/COMP2139_Assignment1_Nigar_Anar_Adler/obj/",
+        "outputPath": "/Users/adlerarian/Documents/ASP.NET/Assignment/triiip/travelbooking/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adlerarian/.nuget/NuGet/NuGet.Config"
